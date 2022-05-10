@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=MyFirstImperativeProgram
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ MyFirstImperativeProgram\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=x\ y
+comment1.target=int\ gcd(int,\ int)
+comment2.params=x\ y
+comment2.target=int\ lcm(int,\ int)
+comment3.params=n
+comment3.target=boolean\ isPrime(int)
+comment4.params=btd
+comment4.target=int\ btdVal(char)
+comment5.params=btr
+comment5.target=int\ btrVal(java.lang.String)
+comment6.params=x
+comment6.target=int\ ufo(int)
+comment7.params=x
+comment7.target=int\ ufot(int)
+comment7.text=\r\n\ \ x\ \=\ 12\r\n\ \ \r\n\ \ |\ \ \ |\ \ 1\ \ |\ \ 1\ \ |\ \ 3\ \ |\ \ 1\ \ |\ \ 3\ \ |\ \ 5\ \ |\ \ 7\ \ |\ \ 1\ \ |\ \ 3\ \ |\ \ 5\ \ |\ \ 7\ \ |\ \ 9\ \ |\r\n\ \ \ \ 0\ \ \ \ 1\ \ \ \ \ 2\ \ \ \ \ 3\ \ \ \ \ 4\ \ \ \ \ 5\ \ \ \ \ 6\ \ \ \ \ 7\ \ \ \ \ 8\ \ \ \ \ 9\ \ \ \ 10\ \ \ \ \ 11\ \ \ \ 12\ \r\n\ \ \r\n
+comment8.params=n
+comment8.target=int\ logSize(int)
+comment9.params=v
+comment9.target=void\ insSort(double[])
+numComments=10

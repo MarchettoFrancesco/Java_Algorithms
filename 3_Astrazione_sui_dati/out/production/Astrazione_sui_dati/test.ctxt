@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=com.company.StringSList.test
+comment0.text=\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ com.company.StringSList.test\n\ \n\ @author\ (il\ tuo\ nome)\ \n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\n
+comment1.params=inf\ sup
+comment1.target=IntSList\ range(int,\ int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

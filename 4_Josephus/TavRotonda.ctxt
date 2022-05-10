@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TavRotonda
+comment0.text=\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ TavRotonda\n\ \n\ new\ TavRotonda(int\ n)\ \n\ tav.numeroCavalieri()\ \:\ int\ \n\ tav.chiHaLaBrocca()\ \:\ int\n\ tav.ritualeCompletato()\ \:\ boolean\n\ tav.serviSidro()\ \:\ TavRotonda\n\ tav.passaBrocca()\ \:\ TavRotonda\n\ \n
+comment1.params=n\ brocca\ lista
+comment1.target=TavRotonda(int,\ int,\ IntSList)
+comment2.params=n
+comment2.target=TavRotonda(int)
+comment3.params=
+comment3.target=int\ quantiCavalieri()
+comment4.params=
+comment4.target=int\ chiHaLaBrocca()
+comment5.params=
+comment5.target=boolean\ ritualeCompletato()
+comment6.params=
+comment6.target=TavRotonda\ serviSidro()
+comment7.params=
+comment7.target=TavRotonda\ passaBrocca()
+comment8.params=
+comment8.target=TavRotonda\ dopoUscitaCavaliere()
+comment9.params=inf\ sup
+comment9.target=IntSList\ range(int,\ int)
+numComments=10
