@@ -8,7 +8,7 @@
 public class GiuseppeFlavio
 {
     public static void main(String[] args) {
-        System.out.println(testGFlavio1(5));
+        System.out.println(testGFlavio1(12));
 
     }
 
@@ -20,8 +20,8 @@ public class GiuseppeFlavio
 
         while ( tav.quantiCavalieri() > 1 ) {  // ! tav.ritualeCompletato()
 
-            tav = tav.serviSidro();
-            tav = tav.passaBrocca();
+            tav.serviSidro();
+            tav.passaBrocca();
 
             // tav = tav.dopoUscitaCavaliere();
         } return tav.chiHaLaBrocca();
