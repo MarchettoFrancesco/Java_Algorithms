@@ -31,7 +31,7 @@ public class TavRotonda
 
         this.n = n;
         b = 0;
-        cavv = new int[ n ];
+        cavv = new int[ n+n-1 ];
         for (int i=0; i<n; i++){
             cavv[i] = i+1;
         }
