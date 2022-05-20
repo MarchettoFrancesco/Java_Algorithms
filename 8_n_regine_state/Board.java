@@ -9,7 +9,9 @@ b.queensOn() : int
 
 b.underAttack(i, j) : i,j coordinate : valore booleano
 
-b.addQueen(i, j) : Board
+b.addQueen(i, j) : Void
+
+b.removeQueen(i, j) : Void
 
 b.arrangement() : String
 
@@ -61,12 +63,12 @@ public class Board {
             rowAttacks[i] = 0;
             colAttacks[i] = 0;
             dg1Attacks[i] = 0;
-            dg2Attacks[0] = 0;
+            dg2Attacks[i] = 0;
         }
         for ( int i = n; i>2*n-1;i++){
 
             dg1Attacks[i] = 0;
-            dg2Attacks[0] = 0;
+            dg2Attacks[i] = 0;
         }
         config = "";
     }
@@ -87,6 +89,19 @@ public class Board {
                  dg2Attacks[i+j-2] > 0 );
     }
 
+    public void removeQueen(int i, int j){
+        int n = size;
+
+        queens = queens - 1;
+        rowAttacks[i-1] = rowAttacks[i-1] - 1 ;
+        colAttacks[j-1] = colAttacks[j-1] - 1;
+        dg1Attacks[i-j+n-1] = dg1Attacks[i-j+n-1] - 1;
+        dg2Attacks[i+j-2] = dg2Attacks[i+j-2] - 1;
+
+        int k = config.indexOf(locCode(i,j));
+        config = config.substring(0,k) + config.substring(k+4);
+    }
+
     public void addQueen(int i, int j){
         int n = size;
 
@@ -97,6 +112,7 @@ public class Board {
         dg2Attacks[i+j-2] = dg2Attacks[i+j-2] + 1;
         config = config + locCode(i,j);
     }
+
     public String arrangement(){
         return config;
     }
