@@ -1,4 +1,4 @@
-public class Node {
+public class Node implements Comparable<Node>{
 
     private final char sym;
     private final int wgt;
@@ -38,4 +38,15 @@ public class Node {
     public Node right(){
     return rgt;
     }
+
+    public int compareTo( Node other){
+        if(weight() < other.weight()){
+            return -1; // priorità rispetto all'argomento perchè più piccolo
+        } else if(weight() > other.weight()){
+            return +1;
+        } else {
+            return 0;
+        }
+    }
+
 }

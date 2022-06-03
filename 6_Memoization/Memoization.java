@@ -218,7 +218,7 @@ public class Memoization{
 
     }
 
-    // llcs dynamic progrmming
+    // llcs dynamic programming
 
     public static int llcsDp(String u, String v){
 
