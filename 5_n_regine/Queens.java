@@ -1,7 +1,7 @@
 public class Queens {
 
     public static void main(String[] args) {
-        System.out.println(numberOfSolutions(4));
+        System.out.println(numberOfSolutions(3));
         System.out.println(listOfSolutions(6).toString());
         System.out.println(listOfSolutions(6).listRef(0).toString());
         System.out.println(listOfSolutions(6).listRef(0));
@@ -26,7 +26,7 @@ public class Queens {
 
             for (int j = 1; j <= n; j++) {
                 if (!board.underAttack(i, j)) {
-                    count = count + numberOfCompletions(board.addQueen(i, j));
+                    count = count + numberOfCompletions(board.addQueens(i, j));
                 }
             }
             return count;
@@ -52,7 +52,7 @@ public class Queens {
 
             for(int j = 1;  j <= n; j++){
                 if( !board.underAttack(i, j) ){
-                    list = list.append(listOfCompletions(board.addQueen(i, j)));
+                    list = list.append(listOfCompletions(board.addQueens(i, j)));
                 }
             } return list;
         }

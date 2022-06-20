@@ -12,7 +12,6 @@
  */
 public class TavRotonda
 {
-    //
     private final int commensali;
     private final int cavConBrocca;
     private final IntSList altriCavv;

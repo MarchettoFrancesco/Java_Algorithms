@@ -1,4 +1,5 @@
-
+import java.io.*;
+import java.util.*;
 /**
  * Aggiungi qui una descrizione della classe MyFirstImperativeProgram
  * 
@@ -7,6 +8,11 @@
  */
 public class MyFirstImperativeProgram
 {
+    public static void main(String[] args) {
+        double[] t = new double[]{3.4,2.1,5.7,4.0,1.8};
+        insSort(t);
+        System.out.println(Arrays.toString(t));
+    }
     // massimo comune divisore
     public static int gcd( int x, int y){
         while ( x != y ){
@@ -23,7 +29,6 @@ public class MyFirstImperativeProgram
         int m = x;
         
         while (m % y > 0) {
-            
             m = m + x;
         }
         return m;
@@ -125,7 +130,7 @@ public class MyFirstImperativeProgram
     
     public static void insSort( double[] v ){
         
-        for ( int k = 2; k < v.length; k++ ){
+        for ( int k = 1; k < v.length; k++ ){
             
             double x = v[k];
             int i = k - 1;

@@ -12,6 +12,7 @@ public class Huffman {
         //System.out.println(IOTest.copyFile("/Users/francescomarchetto/Documents/UNIVERSITA/Programmazione/Programma_Java/9_/IOTest.java","copia.txt"));
     }
     public static final int CHARS = InputTextFile.CHARS;
+
     public static int[] charFreq(String src){
 
     int[] freq = new int[CHARS];

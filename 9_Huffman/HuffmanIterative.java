@@ -21,7 +21,7 @@ class RecFrame{
     public Node lft, rgt;
     public RecFrame(){
         state = 0;
-        lft=null;
+        lft = null;
         rgt = null;
 
     }

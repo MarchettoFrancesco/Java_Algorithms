@@ -58,28 +58,29 @@ public class Board {
     attack = (x, y) -> ( (x == i) || (y == j) || (x-y == i-j) || (x+y == i+j) || b.underAttack(x, y) );
     config = b.arrangement() + locCode(i, j);
 }
-public int size(){
-    return size;
-}
+    public int size(){
+        return size;
+    }
 
-public int queensOn(){
-    return queens;
-}
+    public int queensOn(){
+        return queens;
+    }
 
-public boolean underAttack(int i, int j){
-    return attack.test(i, j);
-}
+    public boolean underAttack(int i, int j){
+        return attack.test(i, j);
+    }
 
-public Board addQueen(int i, int j){
-    return new Board(this, i, j);
-}
-public String arrangement(){
-    return config;
-}
-public String toString(){
-        return "Q[" + arrangement() + "]";
-}
-private static String locCode(int i, int j){
+    public Board addQueens(int i, int j){
+
+        return new Board(this, i, j);
+    }
+    public String arrangement(){
+        return config;
+    }
+    public String toString(){
+            return "Q[" + arrangement() + "]";
+    }
+    private static String locCode(int i, int j){
         return " " + cols.charAt(j) + rows.charAt(i) + " ";
 }
 

@@ -16,8 +16,6 @@ public class TavRotonda
     private int n; // non piu final perché cambierà, numero commensali
     private int b; // posizione cavaliere con la brocca
     private int[] cavv; // etichette dei cavalieri
-    
-
 
    /* private TavRotonda (int n, int brocca, IntSList lista, IntSList lista2){
 
